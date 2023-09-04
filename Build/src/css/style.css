@@ -46,7 +46,7 @@ body {
 #unity-logo {
     width: 154px;
     height: 130px;
-    background: url('../../TemplateData/unity-logo-dark.png') no-repeat center
+    background: url('/TemplateData/unity-logo-dark.png') no-repeat center
 }
 
 #unity-progress-bar-empty {
@@ -54,14 +54,14 @@ body {
     height: 18px;
     margin-top: 10px;
     margin-left: 7px;
-    background: url('../../TemplateData/progress-bar-empty-dark.png') no-repeat center
+    background: url('/TemplateData/progress-bar-empty-dark.png') no-repeat center
 }
 
 #unity-progress-bar-full {
     width: 0%;
     height: 18px;
     margin-top: 10px;
-    background: url('../../TemplateData/progress-bar-full-dark.png') no-repeat center
+    background: url('/TemplateData/progress-bar-full-dark.png') no-repeat center
 }
 
 #unity-footer {
@@ -76,7 +76,7 @@ body {
     float:left;
     width: 204px;
     height: 38px;
-    background: url('../../TemplateData/webgl-logo.png') no-repeat center
+    background: url('/TemplateData/webgl-logo.png') no-repeat center
 }
 
 #unity-build-title {
@@ -91,7 +91,7 @@ body {
     float: right;
     width: 38px;
     height: 38px;
-    background: url('../../TemplateData/fullscreen-button.png') no-repeat center
+    background: url('/TemplateData/fullscreen-button.png') no-repeat center
 }
 
 #unity-warning {

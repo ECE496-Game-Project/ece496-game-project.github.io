@@ -16,9 +16,13 @@ export function UI(){
 export function VerticalControlPanel(){
     return(
         <>
-            <DropdownList name={'Type'}/>
-            <InputField name={'Eox'}/>
-            <Slider name={'Theta'} min={'0'} max={'360'}/>
+            <DropdownList name={'Type'} options={{
+                INVALID: 0,
+                PARALLEL: 1,
+                POINT: 2,
+            }} />
+            <InputField name={'Eox'} />
+            <Slider name={'Theta'} min={'0'} max={'360'} />
         </>
     )
 }

@@ -30,9 +30,9 @@ function unityShowBanner(msg, type) {
 }
 
 var buildUrl = "Build/src";
-var loaderUrl = buildUrl + "/js/unity_loader.js";
+var loaderUrl = buildUrl + "/js/unity.loader.js";
 var config = {
-    frameworkUrl: buildUrl + "/js/unity_framework.js",
+    frameworkUrl: buildUrl + "/js/unity.framework.js",
     dataUrl: buildUrl + "/unity_data/unity.data",
     codeUrl: buildUrl + "/unity_data/unity.wasm",
     streamingAssetsUrl: "StreamingAssets",
@@ -68,7 +68,7 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 }
 
-loadingBar.style.display = "block";
+//loadingBar.style.display = "block";
 
 var script = document.createElement("script");
 script.src = loaderUrl;
