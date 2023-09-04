@@ -18,9 +18,9 @@ function unityShowBanner(msg, type) {
     var div = document.createElement('div');
     div.innerHTML = msg;
     warningBanner.appendChild(div);
-    if (type == 'error') div.style = 'background: red; padding: 10px;';
+    if (type === 'error') div.style = 'background: red; padding: 10px;';
     else {
-        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        if (type === 'warning') div.style = 'background: yellow; padding: 10px;';
         setTimeout(function() {
             warningBanner.removeChild(div);
             updateBannerVisibility();
@@ -29,12 +29,12 @@ function unityShowBanner(msg, type) {
     updateBannerVisibility();
 }
 
-var buildUrl = "Build";
-var loaderUrl = buildUrl + "/JavaScript/unity.loader.js";
+var buildUrl = "Build/src";
+var loaderUrl = buildUrl + "/js/unity_loader.js";
 var config = {
-    frameworkUrl: buildUrl + "/JavaScript/unity.framework.js",
-    dataUrl: buildUrl + "/UnityData/unity.data",
-    codeUrl: buildUrl + "/UnityData/unity.wasm",
+    frameworkUrl: buildUrl + "/js/unity_framework.js",
+    dataUrl: buildUrl + "/unity_data/unity.data",
+    codeUrl: buildUrl + "/unity_data/unity.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "Optics",

@@ -1,26 +1,3 @@
-// To show data in the Web
-// Model
-// data in C#: WaveParams
-// C# data model
-
-// Presenter
-// data in C#:
-// The logic to present param data to web: A separate MonoBehaviour Script
-
-// View
-// data in HTML: getID("").id
-
-
-// To show animation in Unity
-// Model
-// The same model: WaveParams
-
-// Controller
-// The animation controller: WaveSource, RootWaveSource
-
-// View
-// Visualisation in Unity Scene: LineWaveDisplay
-
 const WAVETYPE = {
      INVALID: 0,
      PARALLEL: 1,
