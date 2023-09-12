@@ -1,8 +1,9 @@
 import {useState} from 'react';
+import './params.css'
 
 export default function Panels() {
     return (
-        <div className={"panels-container"}>
+        <div className={"panels-container right-rectangle"}>
             <WaveSourcePanel/>
         </div>
     )
@@ -39,8 +40,8 @@ export function InputField({name}) {
 
     return (
         <>
-            <label htmlFor={name}>{name + ':'}</label>
-            <input type="number" id={name} value={inputValue} onChange={handleInputChange}/>
+            <label className="param-label" htmlFor={name}>{name + ':'}</label>
+            <input className="param-input" type="number" id={name} value={inputValue} onChange={handleInputChange}/>
         </>
     )
 }
@@ -56,13 +57,12 @@ export function Slider({name, min, max}) {
 
     return (
         <>
-            <label htmlFor={name}>
+            <label className={"param-label"} htmlFor={name}>
                 {name + ":"}
                 <output>{inputValue}</output>
             </label>
-            <input
-                type="range" id={name} min={min} max={max}
-                value={inputValue} onChange={handleInputChange}
+            <input className={"param-input"} type="range" id={name} min={min} max={max}
+                   value={inputValue} onChange={handleInputChange}
             />
         </>
     );
@@ -76,11 +76,11 @@ export function DropdownList({name, options}) {
 
     return (
         <>
-            <label htmlFor={name}>{name + ':'}</label>
-            <select id={name} onChange={handleInputChange}>
+            <label className={"param-label"} htmlFor={name}>{name + ':'}</label>
+            <select className={"param-select"} id={name} onChange={handleInputChange}>
                 {
-                    Object.values(options).map((value, index) => (
-                        <option key={index} value={value}>
+                    Object.values(options).map((value) => (
+                        <option key={value} value={value}>
                             {value}
                         </option>
                     ))

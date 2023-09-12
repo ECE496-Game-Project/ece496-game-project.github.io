@@ -1,5 +1,6 @@
 import {Fragment, useState, useEffect, useCallback} from "react";
 import {Unity, UnityConfig, useUnityContext} from "react-unity-webgl";
+import './unity.css'
 
 const unityConfig = {
     loaderUrl: "build/unity.loader.js",
@@ -35,7 +36,7 @@ export function Canvas(){
     }, [addEventListener, removeEventListener, handleGameOver]);
 
     return (
-        <Fragment>
+        <Fragment >
             <Unity className="unity" unityProvider={unityProvider} />
             {!isLoaded && (
                 <div className="loading-overlay">
